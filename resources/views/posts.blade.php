@@ -8,5 +8,6 @@
         <h5>By: {{ $post["author"] }}</h5>
         <p>{{ $post["body"] }}</p>
     </article>
+    
     @endforeach
 @endsection
