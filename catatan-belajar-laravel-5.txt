@@ -1,0 +1,38 @@
+Mempelajari Model =
+
+model adalah tempat untuk menukar data yang diperlukan, biasanya ke database
+
+1. cara membuat model 
+bisa menggunakan artisan. 
+shortcut : ctrl+shift+p kemudian ketik artisan:make model
+
+2.pada model ini membuat :
+-Post.php
+ *penamaan huruf besar diawal.
+ *mempelajari properties static. jika ingin mengakses kelas dan properties static menggunakan = self::$nama_properties
+ *mempelajari method static. jika ingin mengakses method static dengan cara = static::nama_method()
+
+
+
+======================================================================
+Mempelajari Collection = 
+
+collection berguna untuk membuat array agar menjadi keren.
+
+keren = dapat menggunakan method yang disediakan oleh laravel.
+
+contoh :
+
+pada line 41. return $posts->firstWhere('slug', $slug); //artinya mencari slug yang pertama, yang == slug
+
+
+======================================================================
+Mempelajari Controller =
+
+1. cara membuat controller 
+bisa menggunakan artisan. 
+shortcut : ctrl+shift+p kemudian ketik artisan:make controller
+
+
+pada route penulisannya adalah : [Controller:namaclass, 'method']
+cth : Route::get('posts/{slug}', [PostController::class, 'show']);
